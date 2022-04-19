@@ -4,6 +4,14 @@ use std::collections::HashMap;
 use std::io::Cursor;
 use fastly::http::Url;
 
+
+fn response_bad_request(message: &str) -> Result<Response, Error> {
+    return Ok(
+        Response::from_status(StatusCode::BAD_REQUEST)
+        .with_body_text_plain(message)
+    )
+}
+
 #[fastly::main]
 fn main(req: Request) -> Result<Response, Error> {
     // Filter request methods...

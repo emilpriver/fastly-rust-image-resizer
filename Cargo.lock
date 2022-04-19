@@ -721,7 +721,6 @@ dependencies = [
  "image",
  "nanorand",
  "reqwest",
- "serde_json",
 ]
 
 [[package]]
