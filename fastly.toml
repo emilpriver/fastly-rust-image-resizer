@@ -1,0 +1,9 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["Emil Privér"]
+description = "Image Resizer build in rust"
+language = "rust"
+manifest_version = 2
+name = "image-resize"
+service_id = ""
